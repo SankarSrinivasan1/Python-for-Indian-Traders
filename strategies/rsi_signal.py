@@ -1,0 +1,8 @@
+def rsi_signal(rsi):
+    if rsi < 30:
+        return "BUY"
+
+    if rsi > 70:
+        return "SELL"
+
+    return "HOLD"
