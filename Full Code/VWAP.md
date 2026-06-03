@@ -18,5 +18,5 @@ This reduces many false signals during sideways markets.
 
 Required Installation
 
-pip install kiteconnect pandas
+''pip install kiteconnect pandas''
 
