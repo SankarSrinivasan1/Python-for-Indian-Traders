@@ -17,3 +17,6 @@ Volume above average
 This reduces many false signals during sideways markets.
 
 Required Installation
+
+pip install kiteconnect pandas
+
