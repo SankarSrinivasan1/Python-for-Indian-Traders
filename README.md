@@ -1,3 +1,9 @@
+# GitHub companion repository for book titled:
+![API Security for AI Applications](https://github.com/SankarSrinivasan1/API-Security-for-AI-Applications/blob/main/images/file_00000000a2e0720b9c687ca337e6a239.png)
+
+## Buy the book at Amazon and leading online bookstores
+[Python for Indian Stock Traders](https://www.amazon.com/Python-Indian-Stock-Traders-Analytics-ebook/dp/B0H3ZL3JF1)
+
 # Python-for-Indian-Traders
 # Trade Code NSE Python Lab
 
