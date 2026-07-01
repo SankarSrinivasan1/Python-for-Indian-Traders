@@ -13,7 +13,7 @@ Project Workflow
 6. Export results to CSV
 7. Display Top 10 stocks
 
-Author: Your Name
+Author: Sankar Srinivasan 
 License: MIT
 """
 
