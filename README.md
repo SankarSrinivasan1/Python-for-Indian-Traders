@@ -2,7 +2,7 @@
 ![Python for Indian Stock Traders](https://github.com/SankarSrinivasan1/Python-for-Indian-Traders/blob/main/utils/python%201j.jpg)
 
 ## Buy the book at Amazon and leading online bookstores
-[Python for Indian Stock Traders](https://www.amazon.com/Python-Indian-Stock-Traders-Analytics-ebook/dp/B0H3ZL3JF1)
+[Python for Indian Stock Traders](https://www.amazon.in/Python-Indian-Stock-Traders-Analytics-ebook/dp/B0H3ZL3JF1)
 
 # Python-for-Indian-Traders
 # Trade Code NSE Python Lab
