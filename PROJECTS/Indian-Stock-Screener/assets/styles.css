@@ -1,0 +1,271 @@
+/* ==========================================================
+   Indian Stock Screener
+   styles.css
+   Custom styling for Streamlit Application
+   ========================================================== */
+
+/* -----------------------------
+   Global Styles
+------------------------------*/
+
+html,
+body,
+[class*="css"] {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main App Background */
+
+.stApp {
+    background-color: #f5f7fa;
+}
+
+/* -----------------------------
+   Header
+------------------------------*/
+
+.main-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1565C0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* -----------------------------
+   Cards
+------------------------------*/
+
+.metric-card {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+/* -----------------------------
+   Sidebar
+------------------------------*/
+
+section[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #dddddd;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #1565C0;
+}
+
+/* -----------------------------
+   Buttons
+------------------------------*/
+
+.stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #1565C0;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #0D47A1;
+    color: white;
+}
+
+/* -----------------------------
+   Download Button
+------------------------------*/
+
+.stDownloadButton > button {
+    width: 100%;
+    background: #2E7D32;
+    color: white;
+    border-radius: 10px;
+}
+
+.stDownloadButton > button:hover {
+    background: #1B5E20;
+}
+
+/* -----------------------------
+   Success Message
+------------------------------*/
+
+.success-box {
+    background-color: #E8F5E9;
+    border-left: 6px solid #43A047;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* -----------------------------
+   Warning Message
+------------------------------*/
+
+.warning-box {
+    background-color: #FFF8E1;
+    border-left: 6px solid #FB8C00;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* -----------------------------
+   Error Message
+------------------------------*/
+
+.error-box {
+    background-color: #FFEBEE;
+    border-left: 6px solid #E53935;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* -----------------------------
+   DataFrame
+------------------------------*/
+
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+/* -----------------------------
+   Tables
+------------------------------*/
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1565C0;
+    color: white;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+/* -----------------------------
+   Metric Widgets
+------------------------------*/
+
+[data-testid="metric-container"] {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* -----------------------------
+   Expander
+------------------------------*/
+
+.streamlit-expanderHeader {
+    font-weight: bold;
+    color: #1565C0;
+}
+
+/* -----------------------------
+   Input Widgets
+------------------------------*/
+
+.stSelectbox,
+.stSlider,
+.stNumberInput,
+.stTextInput,
+.stCheckbox {
+    margin-bottom: 10px;
+}
+
+/* -----------------------------
+   Footer
+------------------------------*/
+
+.footer {
+    text-align: center;
+    color: #777777;
+    font-size: 14px;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #dddddd;
+}
+
+/* -----------------------------
+   Buy Signal
+------------------------------*/
+
+.buy-signal {
+    color: #2E7D32;
+    font-weight: bold;
+}
+
+/* -----------------------------
+   Sell Signal
+------------------------------*/
+
+.sell-signal {
+    color: #D32F2F;
+    font-weight: bold;
+}
+
+/* -----------------------------
+   Neutral Signal
+------------------------------*/
+
+.neutral-signal {
+    color: #757575;
+    font-weight: bold;
+}
+
+/* -----------------------------
+   Loading Spinner
+------------------------------*/
+
+.stSpinner > div {
+    color: #1565C0;
+}
+
+/* -----------------------------
+   Progress Bar
+------------------------------*/
+
+.stProgress > div > div {
+    background-color: #1565C0;
+}
+
+/* -----------------------------
+   Responsive Layout
+------------------------------*/
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .metric-card {
+        padding: 12px;
+    }
+
+}
