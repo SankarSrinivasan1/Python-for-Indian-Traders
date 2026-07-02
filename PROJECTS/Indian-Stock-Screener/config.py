@@ -1,0 +1,29 @@
+"""
+Project Configuration
+"""
+
+APP_NAME = "Indian Stock Screener"
+
+APP_VERSION = "1.0.0"
+
+DEFAULT_PERIOD = "6mo"
+
+DEFAULT_INTERVAL = "1d"
+
+EXPORT_FOLDER = "reports/exports"
+
+NSE_SYMBOL_FILE = "data/nse_symbols.csv"
+
+DEFAULT_RSI = 30
+
+DEFAULT_ADX = 25
+
+EMA_SHORT = 50
+
+EMA_LONG = 200
+
+SUPERTREND_PERIOD = 10
+
+SUPERTREND_MULTIPLIER = 3
+
+MAX_DOWNLOAD_THREADS = 5
