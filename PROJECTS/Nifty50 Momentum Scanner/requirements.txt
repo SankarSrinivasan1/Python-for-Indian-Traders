@@ -1,0 +1,45 @@
+# ============================================
+# Nifty 50 Momentum Scanner
+# Python Requirements
+# ============================================
+
+# Core Data Analysis
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Market Data
+yfinance>=0.2.60
+
+# Technical Indicators
+pandas-ta>=0.3.14b0
+
+# Date & Time Handling
+python-dateutil>=2.9.0
+
+# Progress Bar
+tqdm>=4.67.0
+
+# Excel Export (Optional)
+openpyxl>=3.1.5
+
+# Environment Variables (Optional)
+python-dotenv>=1.1.0
+
+# Logging & Rich Terminal Output (Optional)
+rich>=14.0.0
+
+Recommended installation
+
+pip install -r requirements.txt
+
+Optional requirements-dev.txt
+
+If you later add testing and code quality tools, create a separate development requirements file:
+
+pytest>=8.4.0
+black>=25.0.0
+flake8>=7.2.0
+isort>=6.0.0
+mypy>=1.16.0
+
+This keeps the main requirements.txt focused on runtime dependencies while development tools remain optional.
