@@ -113,7 +113,8 @@ The application allows users to
 Clone the repository.
 
 ```bash
-git clone https://github.com/yourusername/indian-stock-screener.git
+git clone 
+https://github.com/SankarSrinivasan1/Python-for-Indian-Traders/tree/main/PROJECTS/Indian-Stock-Screener
 ```
 
 Move into the project.
@@ -216,3 +217,6 @@ If you found this project useful,
 💡 Share it with fellow traders
 
 Happy Coding and Happy Trading!
+
+© Sankar Srinivasan 
+petra.srini@gmail.com
