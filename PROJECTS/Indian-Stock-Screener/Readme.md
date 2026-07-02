@@ -114,7 +114,7 @@ Clone the repository.
 
 ```bash
 git clone 
-https://github.com/SankarSrinivasan1/Python-for-Indian-Traders/tree/main/PROJECTS/Indian-Stock-Screener
+https://github.com/SankarSrinivasan1/Python-for-Indian-Traders/tree/main/PROJECTS/Indian-Stock-Screener.git
 ```
 
 Move into the project.
