@@ -31,15 +31,3 @@ rich>=14.0.0
 Recommended installation
 
 pip install -r requirements.txt
-
-Optional requirements-dev.txt
-
-If you later add testing and code quality tools, create a separate development requirements file:
-
-pytest>=8.4.0
-black>=25.0.0
-flake8>=7.2.0
-isort>=6.0.0
-mypy>=1.16.0
-
-This keeps the main requirements.txt focused on runtime dependencies while development tools remain optional.
