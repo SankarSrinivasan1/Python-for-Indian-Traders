@@ -220,3 +220,9 @@ Happy Coding and Happy Trading!
 
 © Sankar Srinivasan 
 petra.srini@gmail.com
+
+# GitHub companion repository for book titled:
+![Python for Indian Stock Traders](https://github.com/SankarSrinivasan1/Python-for-Indian-Traders/blob/main/utils/python%201j.jpg)
+
+## Buy the book at Amazon and leading online bookstores
+[Python for Indian Stock Traders](https://www.amazon.in/Python-Indian-Stock-Traders-Analytics-ebook/dp/B0H3ZL3JF1)
