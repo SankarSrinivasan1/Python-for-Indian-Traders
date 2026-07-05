@@ -1,4 +1,4 @@
-## Example Usage of logger.py
+# Example Usage of logger.py
 
 ### Using the Default Logger
 
@@ -52,7 +52,7 @@ log_debug("Scanning NIFTY 50 stocks...")
 
 ---
 
-## Example Usage of formatter.py
+# Example Usage of formatter.py
 
 ```python
 from utils.formatter import (
@@ -89,7 +89,7 @@ print(format_signal("buy"))
 
 ---
 
-# Validator Module
+# Example usage of validator.py
 
 The `validator.py` module provides reusable validation functions for the **Indian Stock Screener**. It helps ensure that user inputs, market data, and screening parameters are valid before processing.
 
@@ -140,3 +140,6 @@ The module validates the following:
 - Improves application reliability
 - Centralizes validation logic
 - Makes the codebase easier to maintain and extend
+
+---
+
