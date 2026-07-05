@@ -86,3 +86,57 @@ print(format_signal("buy"))
 - ✅ Formats dates and timestamps into readable formats.
 - ✅ Displays trading signals with intuitive icons.
 - ✅ Standardizes pandas DataFrame column names for consistent presentation.
+
+---
+
+# Validator Module
+
+The `validator.py` module provides reusable validation functions for the **Indian Stock Screener**. It helps ensure that user inputs, market data, and screening parameters are valid before processing.
+
+---
+
+## Example Usage
+
+```python
+from utils.validator import (
+    validate_symbol,
+    validate_rsi,
+    validate_strategy,
+)
+
+print(validate_symbol("RELIANCE"))
+# True
+
+print(validate_rsi(75))
+# True
+
+print(validate_rsi(120))
+# False
+```
+
+---
+
+## Validation Features
+
+The module validates the following:
+
+- ✅ Stock symbols
+- ✅ DataFrames
+- ✅ Required DataFrame columns
+- ✅ RSI values (0–100)
+- ✅ ADX values
+- ✅ Indicator periods
+- ✅ Strategy names
+- ✅ Watchlists
+- ✅ Export file paths
+- ✅ Screening results
+
+---
+
+## Benefits
+
+- Prevents invalid user input
+- Reduces runtime errors
+- Improves application reliability
+- Centralizes validation logic
+- Makes the codebase easier to maintain and extend
