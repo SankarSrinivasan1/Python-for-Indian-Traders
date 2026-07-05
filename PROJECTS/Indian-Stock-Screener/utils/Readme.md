@@ -143,3 +143,124 @@ The module validates the following:
 
 ---
 
+# Example usage of export_csv.py
+
+The `export_csv.py` module provides simple functions for exporting screening results, selected columns, and watchlists to CSV files.
+
+---
+
+## Example 1: Save Screening Results
+
+Use the default export settings with an automatically generated timestamped filename.
+
+```python
+from utils.export_csv import save_scan_results
+
+file_path = save_scan_results(results_df)
+
+print(file_path)
+```
+
+**Example Output**
+
+```
+reports/exports/screening_results_20260705_093015.csv
+```
+
+---
+
+## Example 2: Export with a Custom Filename
+
+Specify your own filename when exporting.
+
+```python
+from utils.export_csv import export_dataframe
+
+export_dataframe(
+    results_df,
+    filename="golden_cross.csv"
+)
+```
+
+**Output**
+
+```
+reports/exports/golden_cross.csv
+```
+
+---
+
+## Example 3: Export Selected Columns
+
+Export only the columns you need.
+
+```python
+from utils.export_csv import export_selected_columns
+
+export_selected_columns(
+    results_df,
+    ["Symbol", "Close", "RSI", "Signal"],
+    filename="rsi_scan.csv"
+)
+```
+
+**Generated CSV**
+
+| Symbol | Close | RSI | Signal |
+|---------|------:|----:|--------|
+| RELIANCE | 1543.20 | 28.75 | BUY |
+| TCS | 4125.60 | 72.18 | SELL |
+
+---
+
+## Example 4: Export a Watchlist
+
+Save your favorite stock symbols to a CSV file.
+
+```python
+from utils.export_csv import export_watchlist
+
+watchlist = [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK"
+]
+
+export_watchlist(watchlist)
+```
+
+**Generated CSV**
+
+| Symbol |
+|---------|
+| RELIANCE |
+| TCS |
+| INFY |
+| HDFCBANK |
+
+---
+
+## Features
+
+- 📁 Automatically creates the export directory
+- 🕒 Generates timestamped filenames
+- 📄 Exports any Pandas DataFrame to CSV
+- 🎯 Supports exporting selected columns
+- ⭐ Exports stock watchlists
+- 📝 UTF-8 encoding for Excel compatibility
+- 📊 Returns the full path of the exported file
+- 📋 Logs every successful export
+
+---
+
+## Typical Export Folder Structure
+
+```
+reports/
+└── exports/
+    ├── screening_results_20260705_093015.csv
+    ├── golden_cross.csv
+    ├── rsi_scan.csv
+    └── watchlist.csv
+```
