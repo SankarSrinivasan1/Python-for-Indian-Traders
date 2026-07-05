@@ -1,6 +1,6 @@
 Logger example usage
 
-'''python
+'''
 from utils.logger import logger
 
 logger.info("Application started.")
