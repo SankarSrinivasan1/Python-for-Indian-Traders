@@ -1,4 +1,4 @@
-## Example Usage
+## Example Usage of logger.py
 
 ### Using the Default Logger
 
