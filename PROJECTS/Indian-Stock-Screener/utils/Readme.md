@@ -49,3 +49,40 @@ log_debug("Scanning NIFTY 50 stocks...")
 - ✅ Includes timestamps, log levels, and logger names in every log message.
 - ✅ Provides simple helper functions like `log_info()`, `log_warning()`, `log_error()`, `log_debug()`, and `log_exception()`.
 - ✅ Suitable for both development and production environments.
+
+---
+
+## Example Usage of formatter.py
+
+```python
+from utils.formatter import (
+    format_price,
+    format_percentage,
+    format_volume,
+    format_signal,
+)
+
+print(format_price(2543.756))
+# Output: 2,543.76
+
+print(format_percentage(4.2356))
+# Output: 4.24%
+
+print(format_volume(2356000))
+# Output: 2.36 M
+
+print(format_signal("buy"))
+# Output: 🟢 BUY
+```
+
+---
+
+## Features
+
+- ✅ Formats prices with comma separators.
+- ✅ Formats percentages consistently.
+- ✅ Converts large volume values into **K**, **M**, and **B** notation.
+- ✅ Formats currency using the **₹ (Indian Rupee)** symbol by default.
+- ✅ Formats dates and timestamps into readable formats.
+- ✅ Displays trading signals with intuitive icons.
+- ✅ Standardizes pandas DataFrame column names for consistent presentation.
