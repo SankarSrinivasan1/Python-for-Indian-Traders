@@ -113,23 +113,14 @@ See project tree below.
 ## Roadmap
 
 Version 1
-
-- Live Option Chain
-- PCR
-- Max Pain
-- OI Charts
-
-Version 2
-
-- Greeks
-- Strategy Builder
-- IV Smile
-
-Version 3
-
-- Backtesting
-- Option Screener
-- Telegram Alerts
+Version 1: Live Option Chain Dashboard
+Version 2: Option Greeks Calculator (Delta, Gamma, Theta, Vega, Rho)
+Version 3: Options Strategy Builder (Straddle, Strangle, Iron Condor, Spreads)
+Version 4: Open Interest Screener
+Version 5: AI-based Options Trade Signals
+Version 6: Telegram & WhatsApp Alert Bot
+Version 7: Historical Option Chain Database
+Version 8: Intraday Option Analytics with real-time streaming
 
 ---
 
