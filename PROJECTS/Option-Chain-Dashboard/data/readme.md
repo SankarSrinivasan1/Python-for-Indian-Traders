@@ -211,3 +211,94 @@ data/fetch_option_chain.py
 ```
 
 This module builds on `nse_api.py` by converting the raw NSE option chain JSON into a clean, structured Pandas DataFrame suitable for analysis, visualization, and dashboard development.
+
+---
+
+# NSE API Interface
+
+The `fetch_option_chain.py` module depends on the `NSEAPI` class defined in `data/nse_api.py`.
+
+## Expected Interface
+
+The `NSEAPI` class should provide the following method:
+
+```python
+class NSEAPI:
+    def get_option_chain(self, symbol: str) -> dict:
+        ...
+```
+
+## Method Description
+
+### `get_option_chain(symbol)`
+
+Downloads the latest option chain data from the NSE website and returns the complete JSON response.
+
+### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `symbol` | `str` | Trading symbol such as `NIFTY`, `BANKNIFTY`, or `FINNIFTY`. |
+
+### Returns
+
+**Type:** `dict`
+
+Returns the raw JSON response received from the NSE Option Chain API.
+
+Example:
+
+```python
+api = NSEAPI()
+
+data = api.get_option_chain("NIFTY")
+
+print(data["records"]["underlyingValue"])
+```
+
+## Why Keep a Separate API Layer?
+
+Separating the networking code from the data processing code provides several advantages:
+
+- Single responsibility for each module
+- Easier debugging and maintenance
+- Reusable API client across multiple projects
+- Cleaner business logic
+- Simplified unit testing through API mocking
+- Easy replacement if the NSE API changes in the future
+
+## Module Relationship
+
+```
+Streamlit Dashboard
+        │
+        ▼
+fetch_option_chain.py
+        │
+        ▼
+nse_api.py
+        │
+        ▼
+NSE Option Chain API
+```
+
+## Responsibilities
+
+### `nse_api.py`
+
+- Creates and maintains HTTP sessions
+- Manages cookies and request headers
+- Sends requests to the NSE API
+- Handles retries and connection errors
+- Returns raw JSON data
+
+### `fetch_option_chain.py`
+
+- Calls the `NSEAPI` client
+- Extracts relevant option chain fields
+- Converts JSON into a Pandas DataFrame
+- Filters data by expiry
+- Identifies the At-The-Money (ATM) strike
+- Returns clean, analysis-ready data
+
+This separation follows a modular architecture that improves readability, maintainability, and scalability as additional analytics modules are added to the project.
